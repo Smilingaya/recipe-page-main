@@ -168,7 +168,7 @@ ol li{
 @media (max-width: 400px){
     .container{
         margin: 0;
-       
+        height: 100%;
         border-radius: 0;
         padding: 0 ;
         width: 100%;
