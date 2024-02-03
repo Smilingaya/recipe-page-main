@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+:root{
+    /*fonts*/
+    --font-family-outfit: 'Outfit', sans-serif;
+    --font-family-young: 'Young Serif', serif;
+    --font-weight-Regular-400: 400;
+    --font-weight-SemiBold-600:600 ;
+    --font-weight-Bold-700: 700;
+    --font-size: 16px;
+    /*color*/
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: var(--font-size);
+}
+body{
+    background-color: var(--Eggshell);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 1700px;
+    width: 800px;
+    background-color: var(--White);
+    border-radius: 16px;
+    margin-top: 6rem;
+    padding: 0px  40px; 
+    margin-bottom: 6rem;
+}
+.image{
+    width: 700px;
+    height: 400px;
+    background-image: url(./assets/images/image-omelette.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 35px auto;
+    border-radius: 16px;
+}
+h1{
+    font-size: 40px;
+    font-weight: var(--font-weight-Regular-400);
+    font-family: var(--font-family-young);
+    color: var(--Dark-Charcoal);
+    margin: 10px auto;
+}
+p{
+    color: var(--Wenge-Brown);
+    font-family: var(--font-family-outfit);
+    font-size: 18px;
+    
+}
+
+.card{
+    background-color: var(--Rose-White);
+    height: 170px;
+    width: 700px;
+    border-radius: 8px;
+    padding: 17px 40px;
+    margin: 30px auto;
+}
+.card>h2{
+    color: var(--Dark-Raspberry);
+    font-weight: var(--font-weight-Bold-700);
+    font-family: var(--font-family-outfit);
+    font-size: 20px;
+}
+.card>ul{
+    margin: 15px 20px;
+}
+li::marker{
+    color: var(--Dark-Raspberry);
+}
+.itmes span{
+    font-weight: var(--font-weight-Bold-700);
+    font-family: var(--font-family-outfit);
+    color: var(--Wenge-Brown);
+    margin-left: 13px;
+}
+ul li{
+    color: var(--Wenge-Brown);
+    font-weight: var(--font-weight-Regular-400);
+    font-family: var(--font-family-outfit);
+    margin-top: 9px;
+  
+}
+.title1 , .title2 ,.title3{
+    color: var(--Nutmeg);
+    font-weight: var(--font-weight-Regular-400);
+    font-family: var(--font-family-young);
+    font-size: 25px;
+    margin: 13px auto;
+}
+.ligne li::marker{
+    color: var(--Nutmeg);
+}
+.ligne li{
+    margin-left:  1.5rem;
+}
+
+hr{
+    height: 1px;  
+            background-color:var(--Light-Grey);  
+            border: none;
+            margin: 28px auto;
+}
+ol li::marker{
+    color: var(--Nutmeg);
+    font-weight: var(--font-weight-SemiBold-600);
+    font-family: var(--font-family-outfit);
+    
+}
+li{
+    padding-left: 15px;
+}
+.mod_color{
+    color: var(--Wenge-Brown);
+    font-weight: var(--font-weight-Bold-700);
+    font-family: var(--font-family-outfit);
+     
+}
+ol li{
+    color: var(--Wenge-Brown);
+    font-weight: var(--font-weight-Regular-400);
+    font-family: var(--font-family-outfit);
+    margin-top: 13px;
+}
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    border-bottom: 1px solid var(--Light-Grey);
+   
+    text-align:start;
+    padding:15px  50px  ;
+
+  }
+  .box7,.box8{
+    border: none;
+  }
+
+.box1,.box3,.box5,.box7{
+    font-weight: var(--font-weight-SemiBold-600);
+    font-family: var(--font-family-outfit);
+    color: var(--Wenge-Brown);
+
+}
+.box2,.box4,.box6,.box8{
+    font-weight: var(--font-weight-Bold-700);
+    font-family: var(--font-family-outfit);
+    color: var(--Nutmeg);
+}
+@media (max-width: 400px){
+    .container{
+        margin: 0;
+       
+        border-radius: 0;
+        padding: 0 ;
+        width: 100%;
+    }
+
+ .image {
+  
+    width: 100%;
+    height: 180px;
+    margin-top: 0;
+    border-radius: 0;
+ }
+ h1,p,.title1,.title2,.title3,ul{
+    margin-left:   1.5rem;
+    margin-right: 1rem;
+ }
+p{
+    font-size: 17px;
+}
+.card{
+    width: 90%;
+}
+hr{
+    width: 85%;
+}
+ol{
+    margin-left:   3rem;
+    margin-right: 1rem;  
+    
+}
+ol li,.mod_color{
+    font-size: 18px;
+}
+.last_par{
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+}
